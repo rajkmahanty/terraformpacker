@@ -71,7 +71,7 @@ resource "azurerm_virtual_machine" "eureka_server" {
     disable_password_authentication = false
     ssh_keys = [{
       path     = "/home/${var.admin_username}/.ssh/authorized_keys"
-      key_data = "${file("~/.ssh/id_rsa.pub")}"
+      key_data = "${file("home/devops/.ssh/id_rsa.pub")}"
     }]
   }
 
@@ -81,12 +81,12 @@ resource "azurerm_virtual_machine" "eureka_server" {
  
 provisioner "file" {
    source = "/var/lib/jenkins/workspace/Eureka_Execution/complete/eureka-service/target/eureka-service-0.0.1-SNAPSHOT.jar"
-   destination = "/home/adminis/eureka-service-0.0.1-SNAPSHOT.jar"
+   destination = "/home/devops/eureka-service-0.0.1-SNAPSHOT.jar"
 }
 
 provisioner "file" {
    source = "/var/lib/jenkins/workspace/Eureka_Execution/complete/eureka-client/target/eureka-client-0.0.1-SNAPSHOT.jar"
-   destination = "/home/adminis/eureka-client-0.0.1-SNAPSHOT.jar"
+   destination = "/home/devops/eureka-client-0.0.1-SNAPSHOT.jar"
 }
   
 connection {
@@ -97,9 +97,9 @@ connection {
   
  provisioner "remote-exec" {   
     inline = [
-      "nohup java -jar /home/adminis/eureka-service-0.0.1-SNAPSHOT.jar >> /home/adminis/eureka-service.log &",
+      "nohup java -jar /home/devops/eureka-service-0.0.1-SNAPSHOT.jar >> /home/adminis/eureka-service.log &",
       "sleep 100s",
-      "nohup java -jar /home/adminis/eureka-client-0.0.1-SNAPSHOT.jar >> /home/adminis/eureka-client.log &"
+      "nohup java -jar /home/devops/eureka-client-0.0.1-SNAPSHOT.jar >> /home/adminis/eureka-client.log &"
     ]
   }
 
