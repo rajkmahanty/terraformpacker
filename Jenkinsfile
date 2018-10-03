@@ -27,7 +27,7 @@ node {
        if (Build){   
 	 def pcHome = tool name: 'Packer', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
          env.PATH = "${pcHome}:${env.PATH}"
-	  sh "cd ${pwd()}/packer;packer build -var-file=/home/devops/terraform-packer/packer/templates.json"
+	  sh "cd /home/devops/terraform-packer/packer;packer build templates.json"
         }
     }	
 	
