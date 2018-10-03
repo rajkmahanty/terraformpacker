@@ -27,7 +27,7 @@ node {
        if (Build){   
 	 def pcHome = tool name: 'Packer', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
          env.PATH = "${pcHome}:${env.PATH}"
-	  sh "cd /home/devops/terraform-packer/packer;packer build templates.json"
+	  sh "cd /home/devops/terraformpacker/packer;packer build templates.json"
         }
     }	
 	
@@ -44,7 +44,7 @@ node {
        if (Apply){    
 	 def tfHome = tool name: 'Terraform', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
          env.PATH = "${tfHome}:${env.PATH}"
-         sh "cd /home/devops/terraform-packer/terraform/;terraform init;terraform apply --auto-approve;terraform output --json > terraform.json"
+         sh "cd /home/devops/terraformpacker/terraform/;terraform init;terraform apply --auto-approve;terraform output --json > terraform.json"
        }
     }
 	
@@ -86,7 +86,7 @@ node {
        if (Teardown){    
 	 def tfHome = tool name: 'Terraform', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
          env.PATH = "${tfHome}:${env.PATH}"
-         sh "cd /home/devops/terraform-packer/terraform/;terraform destroy --force"
+         sh "cd /home/devops/terraformpacker/terraform/;terraform destroy --force"
        }
     }	
    	
