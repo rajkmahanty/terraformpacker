@@ -5,8 +5,8 @@
     "tenant_id": "027e173a-9063-4df7-9aea-b38a90e8db3a",
     "subscription_id": "5e4c5a35-8adf-4cb9-89f8-6ab8f53068e0",
     "resource_group_name":"rajazureops",
-    "location": "",
-    "vm_size":""
+    "location": "southindia",
+    "vm_size":"Standard_D2s_v3"
   },
   "builders": [
    {
