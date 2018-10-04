@@ -1,11 +1,11 @@
 {
   "variables": {
-    "client_id": "ca9d7487-c484-49a2-b7a0-4b0a4cf12d9b",
-    "client_secret": "bcc0f396-5a5e-4231-a951-c7e8677f7933",
-    "tenant_id": "2c1f8453-5cc2-44f7-a93f-49ab55dcaab8",
-    "subscription_id": "3216b735-086e-46b2-9363-44095f8213e1",
-    "resource_group_name": "abc-sg",
-    "location": "eastasia",
+    "client_id": "6a88c230-e93c-4de1-899c-261632a20f2e",
+    "client_secret": "d2ecb64f-4198-457c-a302-a442fe759fcd",
+    "tenant_id": "d2ecb64f-4198-457c-a302-a442fe759fcd",
+    "subscription_id": "5e4c5a35-8adf-4cb9-89f8-6ab8f53068e0",
+    "resource_group_name": "rajazureops",
+    "location": "southindia",
     "vm_size": "Standard_D2s_v3"
   },
   "builders": [
