@@ -22,7 +22,7 @@ variable "admin_username" {
 
 variable "admin_password" {
   description = "Machine_password"
-  default = "welcome1"
+  default = "Welcome1"
 }
 
 variable "resource_group" {
