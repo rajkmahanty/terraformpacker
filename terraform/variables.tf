@@ -6,7 +6,7 @@
 #variable "subscription_id" {3216b735-086e-46b2-9363-44095f8213e1}
 
 variable "client_id" { default = "6ba8dafc-eadd-4388-a4c3-0fdcb564a950" }
-variable "client_secret" { default = "6ba8dafc-eadd-4388-a4c3-0fdcb564a950" }
+variable "client_secret" { default = "BurIPQDrMW5j8pFAU3n/IRSXdaHBFO2C4gcbqAXTW/w=" }
 variable "tenant_id" { default = "027e173a-9063-4df7-9aea-b38a90e8db3a" }
 variable "subscription_id" { default = "5e4c5a35-8adf-4cb9-89f8-6ab8f53068e0" }
 
