@@ -1,8 +1,8 @@
 {
   "variables": {
-    "client_id": "6a88c230-e93c-4de1-899c-261632a20f2e",
-    "client_secret": "d2ecb64f-4198-457c-a302-a442fe759fcd",
-    "tenant_id": "d2ecb64f-4198-457c-a302-a442fe759fcd",
+    "client_id": "6ba8dafc-eadd-4388-a4c3-0fdcb564a950",
+    "client_secret": "48fc3aa1-e7ff-4530-8c7a-c0e39fcf752f",
+    "tenant_id": "027e173a-9063-4df7-9aea-b38a90e8db3a",
     "subscription_id": "5e4c5a35-8adf-4cb9-89f8-6ab8f53068e0",
     "resource_group_name": "rajazureops",
     "location": "southindia",
